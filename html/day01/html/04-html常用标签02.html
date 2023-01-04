@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>html常用标签2</title>
+</head>
+<body>
+<!--
+    a 超链接标签
+    属性:href 链接地址
+    target 打开窗口的方式 默认值是 _self 当前窗口打开  _blank 新窗口打开
+    1.外部链接
+    2.内部链接
+    3.空链接
+    4.下载链接：地址链接的是文件 .exe或者是zip等压缩包文件,点击可以直接下载
+    5.网页元素的链接
+ -->
+<a href="https://www.baidu.com" target="_blank">外部链接</a>
+<a href="./03-html常用标签.html" target="_self">内部链接</a>
+<a href="#" target="_self">空链接</a>
+<a href="https://www.baidu.com" target="_self"><img src="../img/下载.jpg"></a>
+
+<!--
+   锚点链接
+   第一步 在链接文本href属性中，设置属性值为#名字
+   第二步 找到目标标签,在里面添加id属性=刚才的名字,就可以实现了
+-->
+
+
+<a href="#two">锚点链接起始</a>
+<div> Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+    Blanditiis doloribus, pariatur dolor sequi voluptate accusamus odit,
+    est harum at ipsam, dicta quas accusantium nulla delectus optio corporis a quos soluta!
+</div>
+<div>
+    <p>第二段</p>
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+    Blanditiis doloribus, pariatur dolor sequi voluptate accusamus odit,
+    est harum at ipsam, dicta quas accusantium nulla delectus optio corporis a quos soluta!
+</div>
+<div style="width: 200px;height: 1000px;background-color: yellow;
+    text-align: center; margin-top: 20px;">占个位置
+</div>
+<div id="two" style="width: 200px;height: 100px;background-color: brown;
+    text-align: center; margin-top: 20px;">
+    锚点链接结束
+</div>
+
+<!--  注释符号 -->
+
+<!--
+    特殊符号
+    空格 &nbsp
+    &nbsp; 半角的不断行的空白格（推荐使用）
+    &ensp; 半角的空格
+    &emsp; 全角的空格
+    大于号 &gt
+    小于号 &lt
+-->
+&gt;
+&nbsp;1 &ensp;
+&lt;
+</body>
+</html>
