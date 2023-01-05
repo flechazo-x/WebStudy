@@ -42,6 +42,7 @@
 </table>
 
 
+
 <!-- 表格案例 -->
 <br>
 <table align="center" border="1" cellspacing="0" height="200px" width="500px">
@@ -280,7 +281,11 @@
     value:表单元素值，给输入框中添加输入值
     checked:主要针对单选和复选框可以设置默认值
     maxLength:设置输入宽输入元素最大值
-    2.select:
+    submit:提交按钮
+    reset:重置按钮,可以还原表单元素默认状态
+    button:普通按钮,不提交数据,后续结合js配合使用
+    file:文件域 上传文件使用
+    <label>标签 input元素定义标注 点击其他元素,重定向到input标签
 -->
 
 <form action="" method="get" name="name1">
@@ -288,6 +293,14 @@
     密码: <input type="password"><br>
     性别： 男<input name="sex" type="radio"> 女<input checked name="sex" type="radio"><br>
     爱好： 吃饭<input checked type="checkbox"> 睡觉<input checked type="checkbox"> 打豆豆<input type="checkbox"><br>
+
+    <input type="submit" value="免费注册"><br>
+    <input type="reset" value="重置按钮"><br>
+    <input type="button" value="获取短信验证码"><br>
+    上传文件:<input type="file" value="配合文件上传"><br>
+
+    <label for="sex">用户名</label> <input id="sex" type="text">
+
 </form>
 
 
