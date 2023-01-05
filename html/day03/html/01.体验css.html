@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Document</title>
+    <style>
+        /*
+        选择器 {样式}
+        给谁改样式{改什么样式}
+         */
+        p {
+            color: brown;
+            font-size: 10px;
+        }
+
+        /*
+         标签选择器：是指用html标签名称作为选择器,选择页面所有相同类标签修改
+          */
+        h1 {
+            color: yellow;
+        }
+
+        h2 {
+            color: pink;
+        }
+
+        /*
+            类选择器
+            利用class属性进行设置 格式 .xx{}
+        */
+
+        .red {
+            color: red;
+        }
+
+        .yellow {
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+        }
+
+        .green {
+            width: 100px;
+            height: 100px;
+            background-color: green;
+        }
+
+        /*
+            类选择器 多类名
+        */
+        .blue {
+            background-color: blue;
+        }
+
+        .font35 {
+            font-size: 35px;
+        }
+
+        /*
+            id 选择器 格式 #xx{} 只能调用一次，别人切勿使用
+        */
+        #maike {
+            color: blueviolet;
+        }
+
+        /*
+        通配符选择器 *他将所有标签样式修改
+        */
+
+        * {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+<!-- 体验 -->
+<p>有点意思</p>
+<!-- 标签选择器 -->
+<h1>111</h1>
+<h1>222</h1>
+<h1>333</h1>
+<h2>444</h2>
+<h2>555</h2>
+<h2>666</h2>
+<!-- 类选择器 -->
+<ul class="red">
+    <li>一</li>
+    <li>二</li>
+    <li>三</li>
+</ul>
+<div class="red">我也想变红色</div>
+<div class="yellow"></div>
+<div class="green"></div>
+<div class="yellow"></div>
+<!-- 多类选择器 -->
+<div class="blue font35">刘德华</div>
+
+<div id="maike">迈克尔.杰克逊</div>
+</body>
+
+</html>
