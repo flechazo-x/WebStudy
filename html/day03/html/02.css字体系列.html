@@ -7,11 +7,43 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title>Document</title>
     <style>
+        body {
+            font-size: 16px;
+        }
+
         h2 {
             /*
             font-family 文字字体样式
             */
-            font-family: 'Miceosoft YaHei', serif;
+            font-family: 'Miceosoft YaHei';
+
+            /*
+             font-size 文字大小,标题标签特殊,需要单独指定大小
+             */
+            font-size: 16px;
+
+            /*
+                 font-weight  字体粗细
+                 noormal 默认值(不加粗) =400
+                 bold (加粗) =700
+             */
+            font-weight: 100;
+
+            /*
+                font-style 文字样式
+                italic 倾斜
+                normal 默认值 不倾斜
+            */
+            font-style: normal;
+        }
+
+        /*
+        复合属性
+        语法规范： font-style font-weight font-size/line-height font-family
+        除font-size和font-family外都可以省略,用空格隔开
+        */
+        div {
+            font: italic 700 16px 'Miceosoft YaHei';
         }
     </style>
 </head>
@@ -25,6 +57,7 @@
 <p>est maiores consequunturdeleniti praesentium architecto</p>
 <p>et ducimus earum consequatur laborum saepe esse dolores, commodi hic atque assumenda</p>
 
+<div>三生三世十里桃花,一心一意百行代码</div>
 </body>
 
 </html>
