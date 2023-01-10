@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <title>选择器</title>
+    <style>
+        /*后代选择器  符号是空格 .xxx xxx */
+        /*子代选择器  符号是大于 .xxx>p*/
+        /*并集选择器  符号是都好 .xxx,.xxx*/
+
+        /*链接伪类选择器*/
+        /* 1.未访问的链接 a:link  把没有点击过的(访问过的)链接选出来 */
+        a:link {
+            color: #333;
+            text-decoration: none;
+        }
+
+        /*2. a:visited 选择点击过的(访问过的)链接 */
+        a:visited {
+            color: orange;
+        }
+
+        /*3. a:hover 选择鼠标经过的那个链接 */
+        a:hover {
+            color: skyblue;
+        }
+
+        /* 4. a:active 选择的是我们鼠标正在按下还没有弹起鼠标的那个链接 */
+        a:active {
+            color: green;
+        }
+
+        /*:focus 选择器 选取活动光标的表单*/
+        /* 把获得光标的input 表单元素选取出来 */
+        input:focus {
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+<a href="#">小猪佩奇</a>
+<a href="http://www.xxxxxxxx.com">未知的网站</a>
+<input type="text">
+<input type="text">
+<input type="text">
+</body>
+
+</html>
