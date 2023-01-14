@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Document</title>
+</head>
+
+<body>
+<!--
+    表格标签  主要用于展示和显示数据
+    table:表格
+    tr：行
+    td：单元格
+    th:表头标签;突出表格重要性加粗居中效果
+
+    表格属性：
+    align 表格对齐方式 left center right
+    border 边框
+    cellpadding 内容和单元格之间距离
+    cellspacing 单元格和单元格之间距离
+
+-->
+<table align="center" border="1" cellpadding="0" cellspacing="0" height="100" width="300">
+    <tr>
+        <th>姓名</th>
+        <th>性别</th>
+        <th>年龄</th>
+    </tr>
+    <tr>
+        <td>刘德华</td>
+        <td>男</td>
+        <td>56</td>
+    </tr>
+    <tr>
+        <td>张学友</td>
+        <td>男</td>
+        <td>50</td>
+    </tr>
+</table>
+
+
+
+<!-- 表格案例 -->
+<br>
+<table align="center" border="1" cellspacing="0" height="200px" width="500px">
+    <th>排名</th>
+    <th>关键字</th>
+    <th>趋势</th>
+    <th>今日搜索</th>
+    <th>最近七日</th>
+    <th>相关链接</th>
+    <tr>
+        <td>1</td>
+        <td>鬼吹灯</td>
+        <td><img src="../img/down.jpg"></td>
+        <td>345</td>
+        <td>123</td>
+        <td><a href="#">贴吧</a> <a href="#">图片</a> <a href="#">百科</a></td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>盗墓笔记</td>
+        <td><img src="../img/down.jpg"></td>
+        <td>124</td>
+        <td>696969</td>
+        <td><a href="#">贴吧</a>&nbsp;<a href="#">图片</a>&nbsp;<a href="#">百科</a></td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>西游记</td>
+        <td><img src="../img/up.jpg"></td>
+        <td>1111</td>
+        <td>2131</td>
+        <td><a href="#">贴吧</a>&nbsp;<a href="#">图片</a>&nbsp;<a href="#">百科</a></td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>东游记</td>
+        <td><img src="../img/up.jpg"></td>
+        <td>1231</td>
+        <td>4523</td>
+        <td><a href="#">贴吧</a>&nbsp;<a href="#">图片</a>&nbsp;<a href="#">百科</a></td>
+    </tr>
+    <tr>
+        <td>5</td>
+        <td>甄嬛传</td>
+        <td><img src="../img/down.jpg"></td>
+        <td>2312</td>
+        <td>3324</td>
+        <td><a href="#">贴吧</a>&nbsp;<a href="#">图片</a>&nbsp;<a href="#">百科</a></td>
+    </tr>
+    <tr>
+        <td>6</td>
+        <td>水浒传</td>
+        <td><img src="../img/up.jpg"></td>
+        <td>42323</td>
+        <td>52315</td>
+        <td><a href="#">贴吧</a>&nbsp;<a href="#">图片</a>&nbsp;<a href="#">百科</a></td>
+    </tr>
+    <tr>
+        <td>7</td>
+        <td>三国演义</td>
+        <td><img src="../img/up.jpg"></td>
+        <td>12424</td>
+        <td>887777</td>
+        <td><a href="#">贴吧</a>&nbsp;<a href="#">图片</a>&nbsp;<a href="#">百科</a></td>
+    </tr>
+</table>
+<br>
+
+<!--
+    更有语义化
+    <thead> 表格的头部区域
+    <tbody> 表格的主体区域
+    以上标签都嵌套在table标签中
+-->
+
+<table align="center" border="1" cellspacing="0" height="200px" width="500px">
+    <thead>
+    <th>排名</th>
+    <th>关键字</th>
+    <th>趋势</th>
+    <th>今日搜索</th>
+    <th>最近七日</th>
+    <th>相关链接</th>
+    </thead>
+    <tbody>
+    <tr>
+        <td>1</td>
+        <td>鬼吹灯</td>
+        <td><img src="../img/down.jpg"></td>
+        <td>345</td>
+        <td>123</td>
+        <td><a href="#">贴吧</a> <a href="#">图片</a> <a href="#">百科</a></td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>盗墓笔记</td>
+        <td><img src="../img/down.jpg"></td>
+        <td>124</td>
+        <td>696969</td>
+        <td><a href="#">贴吧</a>&nbsp;<a href="#">图片</a>&nbsp;<a href="#">百科</a></td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>西游记</td>
+        <td><img src="../img/up.jpg"></td>
+        <td>1111</td>
+        <td>2131</td>
+        <td><a href="#">贴吧</a>&nbsp;<a href="#">图片</a>&nbsp;<a href="#">百科</a></td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>东游记</td>
+        <td><img src="../img/up.jpg"></td>
+        <td>1231</td>
+        <td>4523</td>
+        <td><a href="#">贴吧</a>&nbsp;<a href="#">图片</a>&nbsp;<a href="#">百科</a></td>
+    </tr>
+    <tr>
+        <td>5</td>
+        <td>甄嬛传</td>
+        <td><img src="../img/down.jpg"></td>
+        <td>2312</td>
+        <td>3324</td>
+        <td><a href="#">贴吧</a>&nbsp;<a href="#">图片</a>&nbsp;<a href="#">百科</a></td>
+    </tr>
+    <tr>
+        <td>6</td>
+        <td>水浒传</td>
+        <td><img src="../img/up.jpg"></td>
+        <td>42323</td>
+        <td>52315</td>
+        <td><a href="#">贴吧</a>&nbsp;<a href="#">图片</a>&nbsp;<a href="#">百科</a></td>
+    </tr>
+    <tr>
+        <td>7</td>
+        <td>三国演义</td>
+        <td><img src="../img/up.jpg"></td>
+        <td>12424</td>
+        <td>887777</td>
+        <td><a href="#">贴吧</a>&nbsp;<a href="#">图片</a>&nbsp;<a href="#">百科</a></td>
+    </tr>
+    </tbody>
+</table>
+<br>
+
+<!--
+    合并单元格
+    rowspan=合并单元格的个数;跨行合并
+    colspan=合并跨列的个数;跨列合并
+    1.先确定跨行还是跨列
+    2.找到目标单元格，写上合并方式
+    3.删除多余单元
+-->
+
+<table align="center" border="1" cellspacing="0" height="100px" width="200px">
+    <tr>
+        <td>1</td>
+        <td colspan="2">2</td>
+    </tr>
+    <tr>
+        <td rowspan="2">5</td>
+        <td>6</td>
+        <td>7</td>
+
+    </tr>
+    <tr>
+        <td>10</td>
+        <td>11</td>
+
+    </tr>
+</table>
+
+<hr>
+
+<!--列表-->
+<!--
+    无序列表 ul>ki 列表前默认是实心圆
+    ul标签中只能放li标签
+    li中可以放任何标签
+-->
+<h4>你喜欢的食物</h4>
+<ul>
+    <li>榴莲</li>
+    <li>臭豆腐</li>
+    <li>罐头</li>
+</ul>
+
+<!--
+    有序列表 ul>li
+    ul标签中只能放li标签
+    li中可以放任何标签
+    列表前会默认出现序号
+-->
+<h4>粉丝排行榜</h4>
+<ol>
+    <li>刘德华 10000</li>
+    <li>李小花 300</li>
+    <li>王二狗 100</li>
+</ol>
+
+<!--
+    自定义列表 经常用于对术语或名词进行解释和表述 列表前不会出现序号
+    dl 描述列表 dl标签中只能放dt或者dd标签
+    dt 定义项目/名字
+    dd 表述项目/名字
+    dt和dd处于兄弟关系 可以放任何元素
+-->
+<dl>
+    <dt>关注我们</dt>
+    <dd>新浪微博</dd>
+    <dd>官方微信</dd>
+    <dd>联系我们</dd>
+    <dt>关注你们</dt>
+    <dd>百度贴吧</dd>
+    <dd>官方微信</dd>
+    <dd>联系我们</dd>
+</dl>
+
+<hr>
+
+<!--
+    表单标签:收集用户信息
+    组成：1.表单域 2.表单元素 3.提示信息
+
+    form:表单域:包含表单元素的区域，用于实现用户信息收集和传递
+    属性:
+    action:提交地址
+    method:提交方式
+    name:表单域名称
+
+    表单元素：
+    1.input:输入元素 用于收集用户信息
+    属性值：
+    text 文本框  password:密码框 radio 单选框 checkbox 复选框
+    name:是表单元素的名字,性别单选按钮必需有相同的名字name,才可以学习多选1
+    value:表单元素值，给输入框中添加输入值
+    checked:主要针对单选和复选框可以设置默认值
+    maxLength:设置输入宽输入元素最大值
+    submit:提交按钮
+    reset:重置按钮,可以还原表单元素默认状态
+    button:普通按钮,不提交数据,后续结合js配合使用
+    file:文件域 上传文件使用
+    <label>标签 input元素定义标注 点击其他元素,重定向到input标签
+-->
+
+<form action="" method="get" name="name1">
+    用户名：<input maxlength="5" type="text" value="请输入用户名"><br>
+    密码: <input type="password"><br>
+    性别： 男<input name="sex" type="radio"> 女<input checked name="sex" type="radio"><br>
+    爱好： 吃饭<input checked type="checkbox"> 睡觉<input checked type="checkbox"> 打豆豆<input type="checkbox"><br>
+
+    <input type="submit" value="免费注册"><br>
+    <input type="reset" value="重置按钮"><br>
+    <input type="button" value="获取短信验证码"><br>
+    上传文件:<input type="file" value="配合文件上传"><br>
+
+    <label for="sex">用户名</label> <input id="sex" type="text">
+
+</form>
+
+
+</body>
+
+</html>

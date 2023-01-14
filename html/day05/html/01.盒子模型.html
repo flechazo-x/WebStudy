@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Document</title>
+
+    <style>
+        /*
+        border 边框:
+        粗细,样式,颜色
+         */
+        div {
+            font-size: 10px;
+            /*样式 */
+            border-style: solid;
+            /* 粗细 */
+            border-width: 1px;
+            /* 颜色 */
+            border-color: aqua;
+
+            /* 简写 */
+            border: solid 10px red;
+
+            /* 上边框 */
+            border-top: 5px solid yellow;
+            /* 下边框 */
+            border-bottom: 5px solid yellow;
+            /* 左边距 */
+            padding-left: 20px;
+            /* 上边距 */
+            padding-top: 20px;
+            /* 简写 */
+            /* 一个值 上下左右
+            两个值 上下 左右
+            三个值 上 左右 下
+            四个值 上 右 下 左 */
+            padding: 10px;
+        }
+
+        /* 清除内外边距 */
+        * {
+            /* 清楚内边距 */
+            padding: 0;
+            /* 清楚外边距 */
+            margin: 0;
+        }
+
+
+    </style>
+</head>
+
+<body>
+
+<div style="height: 300px;width: 300px;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam iusto
+    facere suscipit veritatis quis sed aspernatur pariatur magnam quisquam voluptas harum dolorum excepturi minus
+    ipsum amet dolores commodi, eius eligendi!
+</div>
+
+
+<div class="one">
+
+</div>
+
+<span>行内元素只设置左右边距,上下不设置</span>
+</body>
+
+</html>

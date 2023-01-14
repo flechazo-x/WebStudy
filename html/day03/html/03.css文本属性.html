@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Document</title>
+
+    <style>
+        /*
+        css的引入方式
+        1.内部样式表: 将css代码放在style中
+        2.行内样式表: 直接在标签内部中嵌入style中. 如:<p style="color: aliceblue;"></p>
+        3.外部样式表: 核心文件单独放入css中，之后在把css引入html页面中 <link rel="stylesheet" href="文件名路径">
+        */
+        div {
+            /*
+            color 定义字体颜色
+             */
+            color: brown;
+            /* 2:color: rgb(0,0,211); */
+            /* 3:color: #FFFFFF; */
+
+            /*
+            text-align 文字对齐
+            属性：center居中 right 右对齐 left左对齐
+            */
+            text-align: center;
+
+            /*
+            装饰文本
+            none 默认 (最常用)
+            underline 下划线 (常用)
+            overline 上划线 (几乎不用)
+            line-through 删除线 (不常用)
+             */
+            text-decoration: underline;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        /*
+        文本缩进
+        text-indent
+        em 当前文字一个文字的大小
+        */
+        p {
+            text-indent: 2em;
+        }
+
+        p {
+            font-size: 20px;
+            /*
+            行间距 line-height
+            */
+            line-height: 40px;
+        }
+    </style>
+</head>
+
+<body>
+<div>听说哈斯劳动法了红包</div>
+
+<a href="https://www.baidu.com">百度</a>
+
+<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+    Maxime consequatur ea rem optio minima. Magnam voluptas
+    maxime, culpa aliquid rerum quaerat ut unde adipisci iste, velit modi consectetur iure natus!</p>
+</body>
+
+</html>
