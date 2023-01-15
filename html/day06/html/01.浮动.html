@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            /* 浮动 */
+            float: left;
+            border: 1px solid yellow;
+        }
+        .box2{
+            width: 300px;
+            height: 300px;
+            background-color: green;
+        }
+        .box{
+            /*
+            清除浮动
+            1.额外标签法，在最后一个元素添加一个空标签必须是块级元素 写属性 clena :both
+            2.父级添加 overflow:hidden;
+            3.伪类法:after0
+            4.双伪元素:
+             */
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    <div class="box1">1</div>
+    <div class="box1">2</div>
+</div>
+<div class="box2"> </div>
+</body>
+</html>
